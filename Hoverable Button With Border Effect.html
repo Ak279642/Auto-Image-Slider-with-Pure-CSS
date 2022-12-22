@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 14px;
+
+    color: deeppink;
+
+}
+a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: deeppink;
+    transition: all 0.5s ease-in-out 0.10s ;
+  
+
+}
+a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    height: 2px;
+    background: deeppink;
+   transition: all 0.5s ease-in-out 0.10s ;
+
+}
+span::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0%;
+    background: deeppink;
+    transition: all 0.18s ease-in-out;
+
+}
+span::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0%;
+    background: deeppink;
+    transition: all 0.18s ease-in-out;
+
+}
+a:hover span::after{
+    height: 100%;
+    transition: all 0.18s ease-in-out;
+}
+a:hover span::before{
+    transition: all 0.18s ease-in-out;
+    height: 100%;
+}
+a:hover::before {
+    width: 100%;
+    transition: all 0.5s ease-in-out 0.10s ;
+}
+a:hover::after{
+    width: 100%;
+    transition: all 0.5s ease-in-out 0.10s ;
+}
+    </style>
+   
+</head>
+<body>
+  <a href="javascript:void();"><span>Submit</span></a>   
+</body>
+</html>

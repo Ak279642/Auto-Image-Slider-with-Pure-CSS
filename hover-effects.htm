@@ -1,0 +1,249 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    h2 {
+        text-align: center;
+        background: #000;
+        color: #fff;
+        letter-spacing: 0.1em;
+        word-spacing: 0.2em;
+        border-radius: 10px;
+        margin: 10px 0px;
+        text-shadow: 2px 2px 20px orangered;
+    }
+    
+    .main {
+        margin: auto;
+    }
+    
+    .hover_parent1 {
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0.3em 0.3em 1.5em grey;
+    }
+    
+    .hover_parent1 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    .hover_child {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        transition: top 0.4s linear;
+        background: rgba(0, 0, 0, 0.5)
+    }
+    
+    p {
+        color: #fff;
+        text-transform: capitalize;
+        word-wrap: break-word;
+    }
+    
+    .hover_parent1:hover img {
+        filter: saturate(300%);
+    }
+    
+    .hover_parent1:hover .hover_child {
+        top: 0;
+    }
+    
+    .hover_parent2 {
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0.3em 0.3em 1.5em grey;
+    }
+    
+    .hover_parent2 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    .hover_child2 {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        transition: all 0.4s linear;
+        background: rgba(0, 0, 0, 0.5)
+    }
+    
+    p {
+        color: #fff;
+        text-transform: capitalize;
+        word-wrap: break-word;
+    }
+    
+    img {
+        filter: saturate(300%);
+    }
+    
+    .hover_parent2:hover .hover_child2 {
+        left: 0;
+    }
+    
+    .hover_parent3 {
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0.3em 0.3em 1.5em grey;
+    }
+    
+    .hover_parent3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    .hover_child3 {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        transition: all 0.4s linear;
+        background: rgba(0, 0, 0, 0.5)
+    }
+    
+    p {
+        color: #fff;
+        text-transform: capitalize;
+        word-wrap: break-word;
+    }
+    
+    .hover_parent3:hover .hover_child3 {
+        left: 0;
+    }
+    
+    .hover_parent4 {
+        height: 300px;
+        width: 300px;
+        border-radius: 20px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0.3em 0.3em 1.5em grey;
+    }
+    
+    .hover_parent4 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+    
+    .hover_child4 {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        transition: all 0.4s linear;
+        background: rgba(0, 0, 0, 0.5)
+    }
+    
+    p {
+        color: #fff;
+        text-transform: capitalize;
+        word-wrap: break-word;
+    }
+    
+    .hover_parent4:hover .hover_child4 {
+        top: 0;
+    }
+    
+    div {
+        cursor: pointer;
+    }
+</style>
+
+<div class="main">
+
+    <h2>Hover Effect 1</h2>
+    <div class="hover_parent1">
+        <img src="https://images.unsplash.com/photo-1615277344987-e171cce9323a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJhbCUyMHZpZXd8ZW58MHx8MHx8&w=1000&q=80" alt="">
+        <div class="hover_child">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non fugit ad suscipit harum!
+            </p>
+        </div>
+    </div>
+
+    <h2>Hover Effect 2</h2>
+    <div class="hover_parent2">
+        <img src="https://images.unsplash.com/photo-1615277344987-e171cce9323a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJhbCUyMHZpZXd8ZW58MHx8MHx8&w=1000&q=80" alt="">
+        <div class="hover_child2">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non fugit ad suscipit harum!
+            </p>
+        </div>
+    </div>
+
+    <h2>Hover Effect 3</h2>
+    <div class="hover_parent3">
+        <img src="https://images.unsplash.com/photo-1615277344987-e171cce9323a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJhbCUyMHZpZXd8ZW58MHx8MHx8&w=1000&q=80" alt="">
+        <div class="hover_child3">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non fugit ad suscipit harum!
+            </p>
+        </div>
+    </div>
+
+    <h2>Hover Effect 4</h2>
+    <div class="hover_parent4">
+        <img src="https://images.unsplash.com/photo-1615277344987-e171cce9323a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJhbCUyMHZpZXd8ZW58MHx8MHx8&w=1000&q=80" alt="">
+        <div class="hover_child4">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus non fugit ad suscipit harum!
+            </p>
+        </div>
+    </div>
+</div>
